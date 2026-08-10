@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #000;
+  color: #0f0;
+  font-size: 14px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu-bar {
+  background: #222;
+  padding: 4px 8px;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #444;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+.menu-item:hover {
+  background: #444;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+}
+
+.window {
+  border: 2px solid #0a0;
+  background: #001100;
+  flex: 1;
+}
+
+.window-header {
+  background: #003300;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.window-content {
+  padding: 8px;
+  height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 2px;
+}
+
+.tab {
+  background: #003300;
+  padding: 4px 12px;
+  cursor: pointer;
+  border: 1px solid #0a0;
+}
+
+.tab.active {
+  background: #0a0;
+  color: #000;
+}
+
+.chat-area {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.chat-window {
+  flex: 1;
+  border: 2px solid #0a0;
+  background: #001100;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #003300;
+  padding: 4px 8px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 8px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.input-area {
+  display: flex;
+  padding: 4px;
+  gap: 4px;
+}
+
+#message-input {
+  flex: 1;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0a0;
+  padding: 6px;
+  font-family: inherit;
+}
+
+#send-btn {
+  background: #003300;
+  color: #0f0;
+  border: 1px solid #0a0;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.nick-list {
+  width: 180px;
+  border: 2px solid #0a0;
+  background: #001100;
+  display: flex;
+  flex-direction: column;
+}
+
+.nick-header {
+  background: #003300;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.nick-content {
+  flex: 1;
+  padding: 4px;
+  overflow-y: auto;
+}
+
+.status-bar {
+  background: #222;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-top: 1px solid #444;
+}
