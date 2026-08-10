@@ -1,0 +1,18 @@
+{
+  "name": "mui",
+  "version": "0.1.0",
+  "description": "Modern mIRC-style IRC client (free & open source)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "princess38827",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.0"
+  },
+  "dependencies": {
+    "irc-framework": "^4.13.0"
+  }
+}
