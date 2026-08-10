@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mUI - mIRC Style IRC Client</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Top Menu Bar (mIRC style) -->
+    <div class="menu-bar">
+      <div class="menu-item">File</div>
+      <div class="menu-item">View</div>
+      <div class="menu-item">Scripts</div>
+      <div class="menu-item">Help</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <!-- Status / Server Window -->
+      <div class="window" id="status-window">
+        <div class="window-header">Status</div>
+        <div class="window-content" id="status-log"></div>
+      </div>
+
+      <!-- Chat Tabs Area (will become dynamic) -->
+      <div class="tabs-container">
+        <div class="tab active" data-target="status-window">Status</div>
+        <!-- More tabs added dynamically via JS -->
+      </div>
+
+      <!-- Active Chat Window -->
+      <div class="chat-area">
+        <div class="chat-window" id="active-chat">
+          <div class="chat-header" id="chat-header">No channel selected</div>
+          <div class="chat-messages" id="chat-messages"></div>
+          <div class="input-area">
+            <input type="text" id="message-input" placeholder="Type message or /command...">
+            <button id="send-btn">Send</button>
+          </div>
+        </div>
+
+        <!-- Nick List (right side) -->
+        <div class="nick-list">
+          <div class="nick-header">Users (0)</div>
+          <div class="nick-content" id="nick-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      Not connected • Free mIRC clone
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
