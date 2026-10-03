@@ -10,7 +10,7 @@
   "author": "princess38827",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^32.0.0"
+    "electron": "^44.5.1"
   },
   "dependencies": {
     "irc-framework": "^4.13.0"
